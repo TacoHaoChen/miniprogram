@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/xiangce/xiangce",
+    "pages/shuiying/shuiying",
+    "pages/banjishunying/banjishunying",
+    "pages/cropper/cropper-img",
+    "Component/cropper/cropper"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "水印相机",
+    "navigationBarTextStyle": "black"
+  },
+
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取位置信息用于水印制作" 
+    }
+  },
+  "requiredPrivateInfos": [
+    "getLocation",
+    "chooseLocation"
+  ],
+  "sitemapLocation": "sitemap.json"
+}
