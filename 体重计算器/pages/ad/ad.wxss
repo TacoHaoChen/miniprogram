@@ -1,0 +1,4 @@
+.ad {
+    position: relative;
+    top: 30%;
+}

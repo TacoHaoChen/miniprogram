@@ -1,0 +1,127 @@
+  <view style="display:flex;height:auto;width:750rpx;">
+    <view style="display:flex;justify-content: center;align-items: center;flex:3;height:21rpx;background-color:#327739;color: #f3f3f3;font-size:25rpx;">
+   点右上角···添加到我的小程序
+   </view></view>
+<view class="container">
+    <view class="result">
+        <view class="title">BMI指数</view>
+        <view class="score">{{score}}</view>
+        <view class="tip first-tip">
+            <view class="physical-condition">身体状况：<text class="">{{physicalCondition}}</text>
+            </view>
+            <view class="weight-standard no-border">身高标准体重：<text class="">{{weightStandard}}kg</text>
+            </view>
+        </view>
+        <view class="tip">
+            <view class="physical-condition">相关疾病发病危险性: <text class="">{{danger}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="input-container">
+        <view class="item">
+            <text class="label">身高</text>
+            <text class="unit">cm</text>
+            <input bindinput="bindKeyHightInput" class="" maxlength="6" type="digit"></input>
+        </view>
+        <view class="item">
+            <text class="label">体重</text>
+            <text class="unit">kg</text>
+            <input bindinput="bindKeyWeightInput" class="" maxlength="6" type="digit"></input>
+        </view>
+        <view class="item no-border">
+            <text class="label">标准</text>
+            <picker bindchange="bindPickerChange" class="type_select" mode="selector" range="{{array}}" value="{{index}}">
+                <view class="picker"> {{array[index]}} <text>></text>
+                </view>
+            </picker>
+        </view>
+        <button bindtap="calculateBtn" class="calcu_btn">开始计算</button>
+    </view>
+    <view class="compatable">
+        <text class="table-title">标准对照表</text>
+        <view class="table" hidden="{{index!=0}}">
+            <view class="row thead">
+                <text class="col">BMI值</text>
+                <text class="col">身体状况</text>
+            </view>
+            <view class="row">
+                <text class="col">{{charLt}}18.5</text>
+                <text class="col">偏瘦</text>
+            </view>
+            <view class="row">
+                <text class="col">	18.5～23.9</text>
+                <text class="col">正常</text>
+            </view>
+            <view class="row">
+                <text class="col">24～27.9</text>
+                <text class="col">偏胖</text>
+            </view>
+            <view class="row">
+                <text class="col">≥28</text>
+                <text class="col">肥胖</text>
+            </view>
+        </view>
+        <view class="table" hidden="{{index!=1}}">
+            <view class="row thead">
+                <text class="col">BMI值</text>
+                <text class="col">身体状况</text>
+            </view>
+            <view class="row">
+                <text class="col">{{charLt}}18.5</text>
+                <text class="col">偏瘦</text>
+            </view>
+            <view class="row">
+                <text class="col">	18.5～24.9</text>
+                <text class="col">正常</text>
+            </view>
+            <view class="row">
+                <text class="col">25～29.9</text>
+                <text class="col">偏胖</text>
+            </view>
+            <view class="row">
+                <text class="col">30.0～34.9</text>
+                <text class="col">肥胖</text>
+            </view>
+            <view class="row">
+                <text class="col">35.0～39.9</text>
+                <text class="col">重度肥胖</text>
+            </view>
+            <view class="row">
+                <text class="col">≥40.0</text>
+                <text class="col">极重度肥胖</text>
+            </view>
+        </view>
+        <view class="table" hidden="{{index!=2}}">
+            <view class="row thead">
+                <text class="col">BMI值</text>
+                <text class="col">身体状况</text>
+            </view>
+            <view class="row">
+                <text class="col">{{charLt}}18.5</text>
+                <text class="col">偏瘦</text>
+            </view>
+            <view class="row">
+                <text class="col">	18.5～22.9</text>
+                <text class="col">正常</text>
+            </view>
+            <view class="row">
+                <text class="col">23～24.9</text>
+                <text class="col">偏胖</text>
+            </view>
+            <view class="row">
+                <text class="col">25～29.9</text>
+                <text class="col">肥胖</text>
+            </view>
+            <view class="row">
+                <text class="col">≥30</text>
+                <text class="col">重度肥胖</text>
+            </view>
+        </view>
+    </view>
+</view>
+
+
+    <button class="sharebox" hoverClass="none" openType="share">
+                        
+                        <view class="sharebutton">点击分享好友 ↑</view>
+                                        </button>
