@@ -1,0 +1,12 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/ad/ad"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#327739",
+        "navigationBarTitleText": "BMI指数标准体重计算器",
+        "navigationBarTextStyle": "white"
+    }
+}
