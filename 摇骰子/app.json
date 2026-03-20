@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/classics/classics",
+    "pages/play/drink/index",
+    "pages/play/dice/index",
+    "pages/play/size/index",
+    "pages/play/twinkle/index",
+    "pages/screen/index",
+    "pages/base/index"
+  ],
+  "window": {
+    "navigationStyle": "custom",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "摇骰子",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}
