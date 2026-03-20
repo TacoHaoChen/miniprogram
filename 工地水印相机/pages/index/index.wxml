@@ -1,0 +1,52 @@
+<view calss="yemian">
+    <view class="xianji">
+        <camera devicePosition="{{issexiantou}}" flash="{{issgd}}" style="height:{{h}}rpx" wx:if="{{ispaizhao}}">
+            <view class="shuiyingkuan">
+                <view bindtap="banjishunying" class="shuiyin" wx:for="{{shuiying}}">
+                    <text>{{item}}</text>
+                </view>
+            </view>
+            <view bindtap="dingwei" class="dingwei">
+                <text class="dingweitishi" wx:if="{{isdingwei}}">正在定位请稍后</text>
+                <text class="iconfont icon-tubiaohezi-hisxitongtubiao_huaban tubiao" wx:else></text>
+            </view>
+        </camera>
+        <image src="{{src}}" style="height:{{h}}rpx" wx:else></image>
+    </view>
+    <view class="xiamian" style="{{xmh}}">
+        <view class="kongzhi" wx:if="{{!isbaochun}}">
+            <view bindtap="dingshi" class="tubiaokuan">
+                <text class="iconfont icon-duihuadingshi" wx:if="{{isdingshi==0}}"></text>
+                <text style="font-size: 75rpx; line-height: 100rpx;" wx:else>{{isdingshi}}</text>
+            </view>
+            <view bindtap="shanguang" class="tubiaokuan">
+                <text class="iconfont icon-shanguangdeng" wx:if="{{issgd=='off'}}"></text>
+                <text class="iconfont icon-shanguangdeng1" wx:else></text>
+            </view>
+            <view bindtap="paizhao" class="yuan">
+                <view class="paizhao"></view>
+            </view>
+            <view bindtap="qiehuanxiangji" class="tubiaokuan">
+                <text class="iconfont icon-qiehuanxiangji"></text>
+            </view>
+            <view bindtap="xianche" class="tubiaokuan">
+                <text class="iconfont icon-task-"></text>
+            </view>
+        </view>
+        <view class="baochun" wx:else>
+            <view bindtap="quxiao" class="xuanzhe">
+                <view class="paizhao">
+                    <text class="iconfont icon-quxiao" style="color:#9c9999"></text>
+                </view>
+            </view>
+            <view bindtap="baocun1" class="xuanzhe">
+                <view class="paizhao">
+                    <text class="iconfont icon-queding"></text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="huabu" style="position:fixed;top:999999999999999999999rpx;">
+    <canvas canvasId="myCanvas" style="height:580px; width: 435px;"></canvas>
+</view>

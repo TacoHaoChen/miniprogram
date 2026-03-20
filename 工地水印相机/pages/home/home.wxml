@@ -1,0 +1,50 @@
+
+<view style="display:flex;height:auto;width:750rpx;">
+    <view style="display:flex;justify-content: center;align-items: center;flex:3;height:88rpx;font-size:32rpx;">
+    点右上角 ••• 添加到我的小程序
+   </view>
+   <!--<navigator style="display:flex;justify-content: center;align-items: center;flex:1;height:88rpx;background-color:#ff2018e5;color: #ffffff;font-size:34rpx;"
+   target="miniProgram" open-type="navigate" app-id="wx0e0ba6daaed3844e">查看更多</navigator>-->
+</view>
+
+<view class="zongD">
+  <!-- <text class="shouT">欢迎使用专业水印相机小程序</text> -->
+  <!-- <text class="inconfont"></text> -->
+  <image src="../../iconfont/Camera.png" class="photo" bindtap="takePhoto">点击拍照</image>
+  <text bindtap="takePhoto" class="dianJ">点击拍照</text>
+  <official-account></official-account>
+  <!-- <view>
+    <text class="quanX">温馨提示</text>
+    <view bindtap="col" class="quanXy wenT">点击此处(可关闭广告) > </view>
+  </view> -->
+  <!--<view>
+    <text class="quanX">完全免费的水印相机</text>
+    <view class="quanXy">拍照将自动添加时间、地点水印，真实防止篡改；可用于工作考勤、生活打卡、取证等</view>
+  </view>-->
+ <button class='btn1' bindtap="goToPage1">我的照片</button>
+  <!-- <view>
+    <text class="quanX">源代码</text>
+    <view bindtap="yuanM" class="quanXy wenT">查看 ></view>
+  </view> -->
+  <!--<view>
+    <text class="quanX">添加小程序，不迷路</text>
+    <view class="quanXy">请点右上角··· 然后选择“添加到我的小程序”</view>
+    <view class="quanXy">请点右上角··· 然后选择“添加到桌面”或"分享到朋友圈"</view>
+  </view>-->
+  <!-- <view>
+    <text class="quanX wenT">反馈</text>
+    <view class="quanXy fk" bindtap="feedBack">点击此处 ></view>
+
+  </view> -->
+</view>
+<!-- <view class=""></view> -->
+<view class="zhan"></view>
+<view class='share' bindtap='toShare'>
+  <view class='menu-container'>
+    <button class='sharebtn' id="shareBtn" open-type="share" hover-class="other-button-hover">邀请好友拍照
+      <image class='img' src='../../iconfont/fx.png'></image>
+    </button>
+  </view>
+</view>
+<ad-custom unit-id=""></ad-custom>
+

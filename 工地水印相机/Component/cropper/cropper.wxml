@@ -1,0 +1,16 @@
+<view class="layout">
+    <image class="image" id="image" mode="aspectFit" src="{{imagePath}}"></image>
+    <view bindtouchcancel="fnTouchCancel" bindtouchend="fnTouchEnd" bindtouchmove="fnTouchMove" bindtouchstart="fnTouchStart" class="stage" style="width:{{stageWidth}}px;height:{{stageHeight}}px;left:{{stageLeft}}px;top:{{stageTop}}px;">
+        <view class="box" id="box" style="width:{{boxWidth}}px;height:{{boxHeight}}px;left:{{boxLeft}}px;top:{{boxTop}}px;">
+            <view class="lt" id="lt"></view>
+            <view class="lb" id="lb"></view>
+            <view class="rt" id="rt"></view>
+            <view class="rb" id="rb"></view>
+            <view class="line-v" style="left:33.3%;"></view>
+            <view class="line-v" style="left:66.6%;"></view>
+            <view class="line-h" style="top:33.3%;"></view>
+            <view class="line-h" style="top:66.6%;"></view>
+        </view>
+    </view>
+    <canvas canvasId="canvas" style="height:{{canvasHeight}}px;width:{{canvasWidth}}px;position:fixed;background-color:red;left:5000rpx;"></canvas>
+</view>

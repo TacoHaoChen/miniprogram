@@ -1,0 +1,19 @@
+<view>
+    <scroll-view>
+        <view class="huakuai">
+            <view bindtap="xuanzheshuiying" class="shuiyinkuang" data-id="1">
+                <view class="syzs">
+                    <text>经度：31.25</text>
+                    <text>纬度：121.21</text>
+                    <text>地址：某某市某某区</text>
+                    <text>时间：2021-01-11 11-11-11</text>
+                    <text>备注：未设置</text>
+                </view>
+                <text class="syname">水印相机</text>
+            </view>
+        </view>
+        <view class="shuoming">
+            <text></text>
+        </view>
+    </scroll-view>
+</view>

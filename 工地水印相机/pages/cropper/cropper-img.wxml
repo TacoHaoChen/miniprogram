@@ -1,0 +1,15 @@
+<view class="body">
+    <cropper class="stage" id="cropper"></cropper>
+    <view class="bar">
+        <view bindtap="fnCancel" class="xuanzhe">
+            <view class="paizhao">
+                <text class="iconfont icon-quxiao" style="color:#028050"></text>
+            </view>
+        </view>
+        <view bindtap="fnSubmit" class="xuanzhe">
+            <view class="paizhao">
+                <text class="iconfont icon-queding"></text>
+            </view>
+        </view>
+    </view>
+</view>
